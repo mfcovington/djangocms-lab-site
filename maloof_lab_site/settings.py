@@ -112,7 +112,7 @@ TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, 'maloof_lab_site', 'templates'),
 )
 
-INSTALLED_APPS = (
+DEFAULT_APPS = (
     'djangocms_admin_style',
     'djangocms_text_ckeditor',
     'django.contrib.auth',
@@ -123,11 +123,10 @@ INSTALLED_APPS = (
     'django.contrib.sitemaps',
     'django.contrib.staticfiles',
     'django.contrib.messages',
+)
+
+THIRD_PARTY_APPS = (
     'cms',
-    'menus',
-    'sekizai',
-    'treebeard',
-    'djangocms_style',
     'djangocms_column',
     'djangocms_file',
     'djangocms_flash',
@@ -135,11 +134,20 @@ INSTALLED_APPS = (
     'djangocms_inherit',
     'djangocms_link',
     'djangocms_picture',
+    'djangocms_style',
     'djangocms_teaser',
     'djangocms_video',
+    'menus',
     'reversion',
-    'maloof_lab_site'
+    'sekizai',
+    'treebeard',
 )
+
+LOCAL_APPS = (
+    'maloof_lab_site',
+)
+
+INSTALLED_APPS = DEFAULT_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
 LANGUAGES = (
     ## Customize this
