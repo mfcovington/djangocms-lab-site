@@ -73,6 +73,15 @@ STATICFILES_DIRS = (
 )
 SITE_ID = 1
 
+# Django Pipeline config
+# http://django-pipeline.readthedocs.org/en/1.4.7/
+STATICFILES_STORAGE = 'pipeline.storage.PipelineCachedStorage'
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'pipeline.finders.PipelineFinder',
+)
+
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
@@ -138,6 +147,7 @@ THIRD_PARTY_APPS = (
     'djangocms_teaser',
     'djangocms_video',
     'menus',
+    'pipeline',
     'reversion',
     'sekizai',
     'treebeard',
