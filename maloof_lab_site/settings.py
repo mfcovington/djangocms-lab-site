@@ -203,9 +203,9 @@ CMS_LANGUAGES = {
 
 CMS_TEMPLATES = (
     ## Customize this
-    ('fullwidth.html', 'Fullwidth'),
-    ('sidebar_left.html', 'Sidebar Left'),
-    ('sidebar_right.html', 'Sidebar Right')
+    ('maloof_lab_site/fullwidth.html', 'Fullwidth'),
+    ('maloof_lab_site/sidebar_left.html', 'Sidebar Left'),
+    ('maloof_lab_site/sidebar_right.html', 'Sidebar Right')
 )
 
 CMS_PERMISSION = True
