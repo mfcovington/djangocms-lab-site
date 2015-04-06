@@ -61,3 +61,6 @@ target/
 
 # Package managers
 bower_components
+
+# Django assets
+/static/
