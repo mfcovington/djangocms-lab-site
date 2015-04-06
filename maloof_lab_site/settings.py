@@ -84,6 +84,12 @@ STATICFILES_FINDERS = (
 PIPELINE_CSS_COMPRESSOR = 'pipeline.compressors.yuglify.YuglifyCompressor'
 PIPELINE_JS_COMPRESSOR = 'pipeline.compressors.uglifyjs.UglifyJSCompressor'
 PIPELINE_CSS = {
+    'site': {
+        'source_filenames': (
+            'maloof_lab_site/css/nav.css',
+        ),
+        'output_filename': 'css/site.css',
+    },
     'vendor': {
         'source_filenames': (
             'bower_components/bootstrap/dist/css/bootstrap.css',

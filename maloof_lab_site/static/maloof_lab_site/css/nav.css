@@ -1,0 +1,10 @@
+/* CMS Toolbar displaces Navbar */
+.cms-toolbar-expanded .navbar {
+  height: 80px;
+  padding-top: 30px
+}
+
+/* Navbar displaces body */
+body {
+  padding-top: 70px;
+}
