@@ -223,7 +223,7 @@ $(document).ready(function () {
 			// overwrite state when provided
 			if(show) this.settings.toolbar = 'collapsed';
 			// toggle bar
-			(this.settings.toolbar === 'collapsed') ? this._showToolbar(200) : this._hideToolbar(200);
+			(this.settings.toolbar === 'collapsed') ? this._showToolbar(0) : this._hideToolbar(0);
 		},
 
 		openMessage: function (msg, dir, delay, error) {
