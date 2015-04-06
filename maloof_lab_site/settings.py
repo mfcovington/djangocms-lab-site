@@ -81,6 +81,25 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     'pipeline.finders.PipelineFinder',
 )
+PIPELINE_CSS_COMPRESSOR = 'pipeline.compressors.yuglify.YuglifyCompressor'
+PIPELINE_JS_COMPRESSOR = 'pipeline.compressors.uglifyjs.UglifyJSCompressor'
+PIPELINE_CSS = {
+    'vendor': {
+        'source_filenames': (
+            'bower_components/bootstrap/dist/css/bootstrap.css',
+        ),
+        'output_filename': 'css/vendor.css',
+    }
+}
+PIPELINE_JS = {
+    'vendor': {
+        'source_filenames': (
+            'bower_components/jquery/dist/jquery.js',
+            'bower_components/bootstrap/dist/js/bootstrap.js',
+        ),
+        'output_filename': 'js/vendor.js',
+    }
+}
 
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
