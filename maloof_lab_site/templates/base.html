@@ -1,4 +1,4 @@
-{% load cms_tags menu_tags sekizai_tags %}
+{% load cms_tags menu_tags sekizai_tags pipeline %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{% block title %}This is my new project home page{% endblock title %}</title>
+    {% stylesheet 'vendor' %}
     {% render_block "css" %}
     <style type="text/css">
       .nav {
@@ -28,6 +29,7 @@
       {% block content %}
       {% endblock content %}
     </div>
+    {% javascript 'vendor' %}
     {% render_block "js" %}
   </body>
 </html>
