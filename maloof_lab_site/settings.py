@@ -220,6 +220,7 @@ CMS_TEMPLATES = (
     ('maloof_lab_site/sidebar_left.html', 'Sidebar Left'),
     ('maloof_lab_site/sidebar_right.html', 'Sidebar Right'),
     ('maloof_lab_site/carousel.html', 'Carousel'),
+    ('maloof_lab_site/genome-browser.html', 'Genome Browser'),
 )
 
 CMS_PERMISSION = True
