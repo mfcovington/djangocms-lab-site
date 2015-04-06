@@ -87,6 +87,7 @@ PIPELINE_CSS = {
     'site': {
         'source_filenames': (
             'maloof_lab_site/css/nav.css',
+            'maloof_lab_site/css/carousel.css',
         ),
         'output_filename': 'css/site.css',
     },
@@ -98,6 +99,12 @@ PIPELINE_CSS = {
     }
 }
 PIPELINE_JS = {
+    'site': {
+        'source_filenames': (
+            'maloof_lab_site/js/carousel.js',
+        ),
+        'output_filename': 'js/site.js',
+    },
     'vendor': {
         'source_filenames': (
             'bower_components/jquery/dist/jquery.js',
@@ -211,7 +218,8 @@ CMS_TEMPLATES = (
     ## Customize this
     ('maloof_lab_site/fullwidth.html', 'Fullwidth'),
     ('maloof_lab_site/sidebar_left.html', 'Sidebar Left'),
-    ('maloof_lab_site/sidebar_right.html', 'Sidebar Right')
+    ('maloof_lab_site/sidebar_right.html', 'Sidebar Right'),
+    ('maloof_lab_site/carousel.html', 'Carousel'),
 )
 
 CMS_PERMISSION = True

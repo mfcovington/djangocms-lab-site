@@ -1,6 +1,9 @@
 /* CMS Toolbar displaces Navbar */
 .cms-toolbar-expanded .navbar {
   height: 80px;
+}
+.cms-toolbar-expanded .navbar,
+.cms-toolbar-expanded .modal {
   padding-top: 30px
 }
 
