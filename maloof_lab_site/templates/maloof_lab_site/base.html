@@ -1,4 +1,4 @@
-{% load cms_tags menu_tags sekizai_tags pipeline %}
+{% load cms_tags sekizai_tags pipeline %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,10 +18,8 @@
   </head>
   <body>
     {% cms_toolbar %}
-    <div style="width: 940px; margin:0 auto">
-      <ul class="nav">
-        {% show_menu 0 100 100 100 %}
-      </ul>
+    {% include "maloof_lab_site/_navbar.html" %}
+    <div style="container">
       {% block content %}
       {% endblock content %}
     </div>
