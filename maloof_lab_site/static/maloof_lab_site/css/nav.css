@@ -11,3 +11,8 @@
 body {
   padding-top: 70px;
 }
+
+.navbar-collapse {
+  /* For some reason, navbar is transparent when it expands */
+  background-color: #222;
+}
