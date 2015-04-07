@@ -88,6 +88,7 @@ PIPELINE_CSS = {
         'source_filenames': (
             'maloof_lab_site/css/nav.css',
             'maloof_lab_site/css/carousel.css',
+            'maloof_lab_site/css/shiny-app.css',
         ),
         'output_filename': 'css/site.css',
     },
@@ -221,6 +222,7 @@ CMS_TEMPLATES = (
     ('maloof_lab_site/sidebar_right.html', 'Sidebar Right'),
     ('maloof_lab_site/carousel.html', 'Carousel'),
     ('maloof_lab_site/genome-browser.html', 'Genome Browser'),
+    ('maloof_lab_site/shiny-app.html', 'Shiny App'),
 )
 
 CMS_PERMISSION = True

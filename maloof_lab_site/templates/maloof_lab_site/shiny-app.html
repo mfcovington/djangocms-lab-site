@@ -1,0 +1,10 @@
+{% extends "maloof_lab_site/base.html" %}
+{% load cms_tags sekizai_tags staticfiles %}
+
+{% block title %}{% page_attribute 'title' %}{% endblock title %}
+
+{% block content %}
+
+  <iframe class="shiny-app" src="http://symposium.plb.ucdavis.edu:3838/QTL-Visualization/" frameborder="0"></iframe>
+
+{% endblock content %}
