@@ -184,10 +184,15 @@ THIRD_PARTY_APPS = (
     'reversion',
     'sekizai',
     'treebeard',
+    'easy_thumbnails',
+    'filer',
+    'mptt',
 )
 
 LOCAL_APPS = (
     'maloof_lab_site',
+    'lab_members',
+    'cms_lab_members',
 )
 
 INSTALLED_APPS = DEFAULT_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -245,5 +250,18 @@ MIGRATION_MODULES = {
     'djangocms_link': 'djangocms_link.migrations_django',
     'djangocms_picture': 'djangocms_picture.migrations_django',
     'djangocms_teaser': 'djangocms_teaser.migrations_django',
-    'djangocms_video': 'djangocms_video.migrations_django'
+    'djangocms_video': 'djangocms_video.migrations_django',
+    'filer': 'filer.migrations_django',
 }
+
+# For easy_thumbnails to support retina displays (recent MacBooks, iOS)
+THUMBNAIL_HIGH_RESOLUTION = True
+THUMBNAIL_QUALITY = 95
+THUMBNAIL_PROCESSORS = (
+    'easy_thumbnails.processors.colorspace',
+    'easy_thumbnails.processors.autocrop',
+    'filer.thumbnail_processors.scale_and_crop_with_subject_location',
+    'easy_thumbnails.processors.filters',
+)
+THUMBNAIL_PRESERVE_EXTENSIONS = ('png', 'gif')
+THUMBNAIL_SUBDIR = 'versions'
