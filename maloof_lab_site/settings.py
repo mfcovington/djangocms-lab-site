@@ -73,6 +73,48 @@ STATICFILES_DIRS = (
 )
 SITE_ID = 1
 
+# Django Pipeline config
+# http://django-pipeline.readthedocs.org/en/1.4.7/
+STATICFILES_STORAGE = 'pipeline.storage.PipelineCachedStorage'
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'pipeline.finders.PipelineFinder',
+)
+PIPELINE_CSS_COMPRESSOR = 'pipeline.compressors.yuglify.YuglifyCompressor'
+PIPELINE_JS_COMPRESSOR = 'pipeline.compressors.uglifyjs.UglifyJSCompressor'
+PIPELINE_CSS = {
+    'site': {
+        'source_filenames': (
+            'maloof_lab_site/css/nav.css',
+            'maloof_lab_site/css/carousel.css',
+            'maloof_lab_site/css/shiny-app.css',
+        ),
+        'output_filename': 'css/site.css',
+    },
+    'vendor': {
+        'source_filenames': (
+            'bower_components/bootstrap/dist/css/bootstrap.css',
+        ),
+        'output_filename': 'css/vendor.css',
+    }
+}
+PIPELINE_JS = {
+    'site': {
+        'source_filenames': (
+            'maloof_lab_site/js/carousel.js',
+        ),
+        'output_filename': 'js/site.js',
+    },
+    'vendor': {
+        'source_filenames': (
+            'bower_components/jquery/dist/jquery.js',
+            'bower_components/bootstrap/dist/js/bootstrap.js',
+        ),
+        'output_filename': 'js/vendor.js',
+    }
+}
+
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
@@ -112,7 +154,7 @@ TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, 'maloof_lab_site', 'templates'),
 )
 
-INSTALLED_APPS = (
+DEFAULT_APPS = (
     'djangocms_admin_style',
     'djangocms_text_ckeditor',
     'django.contrib.auth',
@@ -123,11 +165,10 @@ INSTALLED_APPS = (
     'django.contrib.sitemaps',
     'django.contrib.staticfiles',
     'django.contrib.messages',
+)
+
+THIRD_PARTY_APPS = (
     'cms',
-    'menus',
-    'sekizai',
-    'treebeard',
-    'djangocms_style',
     'djangocms_column',
     'djangocms_file',
     'djangocms_flash',
@@ -135,11 +176,21 @@ INSTALLED_APPS = (
     'djangocms_inherit',
     'djangocms_link',
     'djangocms_picture',
+    'djangocms_style',
     'djangocms_teaser',
     'djangocms_video',
+    'menus',
+    'pipeline',
     'reversion',
-    'maloof_lab_site'
+    'sekizai',
+    'treebeard',
 )
+
+LOCAL_APPS = (
+    'maloof_lab_site',
+)
+
+INSTALLED_APPS = DEFAULT_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
 LANGUAGES = (
     ## Customize this
@@ -168,7 +219,10 @@ CMS_TEMPLATES = (
     ## Customize this
     ('fullwidth.html', 'Fullwidth'),
     ('sidebar_left.html', 'Sidebar Left'),
-    ('sidebar_right.html', 'Sidebar Right')
+    ('sidebar_right.html', 'Sidebar Right'),
+    ('carousel.html', 'Carousel'),
+    ('genome-browser.html', 'Genome Browser'),
+    ('shiny-app.html', 'Shiny App'),
 )
 
 CMS_PERMISSION = True

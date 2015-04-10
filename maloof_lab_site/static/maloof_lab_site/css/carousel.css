@@ -1,0 +1,35 @@
+.slider-size {
+  height: 390px; /* slide height */
+}
+
+.carousel {
+  width:100%;
+  margin:0 auto; /* center carousel if other than 100% */
+}
+
+.carousel-caption {
+  background-color: rgba(119, 129, 134, 0.8);
+  border-radius: 5px;
+}
+
+.shadow {
+  text-shadow: 1px 1px 2px black,
+               0 0 1em black,
+               0 0 0.2em black;
+}
+
+.shadow-heavy {
+  text-shadow: 1px 1px 2px black,
+               0 0 1em black,
+               0 0 0.8em black,
+               0 0 0.5em black,
+               0 0 0.2em black;
+}
+
+.modal-footer .btn-group-vertical .btn + .btn {
+  margin-left: 0px;
+}
+
+.modal-footer .btn-group-vertical + .btn-group-vertical {
+  margin-top: 5px;
+}

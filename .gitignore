@@ -58,3 +58,9 @@ target/
 
 # Databases
 *.db
+
+# Package managers
+bower_components
+
+# Django assets
+/static/

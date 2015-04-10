@@ -1,0 +1,7 @@
+.shiny-app {
+  border: none;
+  margin: -17px 0 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}

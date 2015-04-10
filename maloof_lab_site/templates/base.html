@@ -1,29 +1,31 @@
-{% load cms_tags menu_tags sekizai_tags %}
+{% load cms_tags sekizai_tags pipeline %}
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>{% block title %}This is my new project home page{% endblock title %}</title>
+    {% stylesheet 'vendor' %}
+    {% stylesheet 'site' %}
     {% render_block "css" %}
-    <style type="text/css">
-        .nav {
-            padding-left: 0;
-        }
-        .nav li {
-            display: inline;
-            list-style-type: none;
-            padding-right: 20px;
-        }
-    </style>
-</head>
-<body>
-{% cms_toolbar %}
-<div style="width: 940px; margin:0 auto">
-    <ul class="nav">
-        {% show_menu 0 100 100 100 %}
-    </ul>
-    {% block content %}
-    {% endblock content %}
-</div>
-{% render_block "js" %}
-</body>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    {% cms_toolbar %}
+    {% include "_navbar.html" %}
+    <div style="container">
+      {% block content %}
+      {% endblock content %}
+    </div>
+    {% javascript 'vendor' %}
+    {% javascript 'site' %}
+    {% render_block "js" %}
+  </body>
 </html>

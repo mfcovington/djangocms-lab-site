@@ -1,0 +1,14 @@
+{
+  "name": "maloof_lab_site",
+  "version": "0.0.0",
+  "authors": [
+    "Mike Covington <mfcovington@gmail.com>"
+  ],
+  "description": "Maloof Lab django CMS site",
+  "license": "MIT",
+  "homepage": "http://symposium.plb.ucdavis.edu",
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "jquery": "1.11.2"
+  }
+}
