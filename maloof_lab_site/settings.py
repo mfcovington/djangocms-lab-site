@@ -217,12 +217,12 @@ CMS_LANGUAGES = {
 
 CMS_TEMPLATES = (
     ## Customize this
-    ('maloof_lab_site/fullwidth.html', 'Fullwidth'),
-    ('maloof_lab_site/sidebar_left.html', 'Sidebar Left'),
-    ('maloof_lab_site/sidebar_right.html', 'Sidebar Right'),
-    ('maloof_lab_site/carousel.html', 'Carousel'),
-    ('maloof_lab_site/genome-browser.html', 'Genome Browser'),
-    ('maloof_lab_site/shiny-app.html', 'Shiny App'),
+    ('fullwidth.html', 'Fullwidth'),
+    ('sidebar_left.html', 'Sidebar Left'),
+    ('sidebar_right.html', 'Sidebar Right'),
+    ('carousel.html', 'Carousel'),
+    ('genome-browser.html', 'Genome Browser'),
+    ('shiny-app.html', 'Shiny App'),
 )
 
 CMS_PERMISSION = True
