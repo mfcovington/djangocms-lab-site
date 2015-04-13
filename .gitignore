@@ -64,3 +64,6 @@ bower_components
 
 # Django assets
 /static/
+
+# Media files
+/media/
