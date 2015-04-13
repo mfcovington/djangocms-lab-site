@@ -86,6 +86,7 @@ PIPELINE_JS_COMPRESSOR = 'pipeline.compressors.uglifyjs.UglifyJSCompressor'
 PIPELINE_CSS = {
     'site': {
         'source_filenames': (
+            'maloof_lab_site/css/main.css',
             'maloof_lab_site/css/nav.css',
             'maloof_lab_site/css/carousel.css',
             'maloof_lab_site/css/shiny-app.css',
