@@ -81,3 +81,11 @@ body {
 .btn-group .dropdown-toggle.btn-custom:active {
   border: 0;
 }
+/* Prevent font-width from changing when clicking on dropdown in Safari */
+/* http://foundation.zurb.com/forum/posts/1364-safari-text-weirdness-with-f5-topbar-dropdown-menu */
+/* http://stackoverflow.com/questions/22181749/font-issue-on-safari */
+.nav a,
+.navbar-brand,
+.nav .btn-custom {
+  -webkit-font-smoothing: subpixel-antialiased;
+}
