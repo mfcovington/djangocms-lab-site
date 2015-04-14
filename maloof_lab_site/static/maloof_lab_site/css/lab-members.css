@@ -1,6 +1,8 @@
 /* Potential color pallete: http://paletton.com/#uid=23r0u0kehUd2l+M8QYoiROamUFe */
 
-body {
-  background-color: #EDF9FE;
-  font-family: 'Open Sans', sans-serif;
+.thumbnail {
+  border-color: #87CEEB;
+}
+.thumbnail:hover {
+  border-color: #FFC98D;
 }

@@ -89,6 +89,7 @@ PIPELINE_CSS = {
             'maloof_lab_site/css/main.css',
             'maloof_lab_site/css/nav.css',
             'maloof_lab_site/css/carousel.css',
+            'maloof_lab_site/css/lab-members.css',
             'maloof_lab_site/css/shiny-app.css',
         ),
         'output_filename': 'css/site.css',
