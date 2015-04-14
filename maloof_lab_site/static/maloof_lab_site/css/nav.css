@@ -16,3 +16,68 @@ body {
   /* For some reason, navbar is transparent when it expands */
   background-color: #222;
 }
+
+
+/***************************/
+/* Split dropdowns in menu */
+/***************************/
+
+.btn-custom a {
+  color: #9d9d9d;
+  padding: 100% 0;
+  text-decoration: none;
+}
+.active .btn-custom,
+.btn-custom:hover a,
+.btn-custom:active a {
+  color: white;
+}
+.btn-custom:focus,
+.btn-custom {
+  background-color: #222222;
+  -webkit-border-image: -webkit-linear-gradient(top, #222222, #222222 25%, #9d9d9d 25%, #9d9d9d 75%, #222222 75%, #222222) 1;
+       -o-border-image: linear-gradient(to bottom, #222222, #222222 25%, #9d9d9d 25%, #9d9d9d 75%, #222222 75%, #222222) 1;
+          border-image: linear-gradient(to bottom, #222222, #222222 25%, #9d9d9d 25%, #9d9d9d 75%, #222222 75%, #222222) 1;
+  border-width: 0;
+  color: #9d9d9d;
+}
+.btn-custom:hover,
+.btn-custom.focus,
+.btn-custom:active,
+.btn-custom.active,
+.open > .dropdown-toggle.btn-custom {
+  color: white;
+  -webkit-border-image: -webkit-linear-gradient(top, #222222, #222222 25%, #9d9d9d 25%, #9d9d9d 75%, #222222 75%, #222222) 1;
+       -o-border-image: linear-gradient(to bottom, #222222, #222222 25%, #9d9d9d 25%, #9d9d9d 75%, #222222 75%, #222222) 1;
+          border-image: linear-gradient(to bottom, #222222, #222222 25%, #9d9d9d 25%, #9d9d9d 75%, #222222 75%, #222222) 1;
+  border-width: 0;
+}
+.active .btn-custom,
+.active .open .btn-custom {
+  background-color: #080808;
+  -webkit-border-image: -webkit-linear-gradient(top, #080808, #080808 25%, white 25%, white 75%, #080808 75%, #080808) 1;
+       -o-border-image: linear-gradient(to bottom, #080808, #080808 25%, white 25%, white 75%, #080808 75%, #080808) 1;
+          border-image: linear-gradient(to bottom, #080808, #080808 25%, white 25%, white 75%, #080808 75%, #080808) 1;
+}
+.btn-custom:active,
+.btn-custom.active,
+.open > .dropdown-toggle.btn-custom {
+  background-image: none;
+}
+.btn-group,
+.btn-group .btn-custom + .dropdown-toggle.btn-custom {
+  margin: 0;
+}
+.btn-group .btn-custom,
+.btn-group .btn-custom:focus,
+.btn-group .btn-custom:active {
+  border-radius: 0;
+  border-width: 0 1px 0 0;
+  height: 50px;
+  outline: none;
+}
+.btn-group .dropdown-toggle.btn-custom,
+.btn-group .dropdown-toggle.btn-custom:focus,
+.btn-group .dropdown-toggle.btn-custom:active {
+  border: 0;
+}
