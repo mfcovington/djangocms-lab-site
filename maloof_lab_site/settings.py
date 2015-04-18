@@ -196,6 +196,7 @@ LOCAL_APPS = (
     'maloof_lab_site',
     'lab_members',
     'cms_lab_members',
+    'cms_shiny',
 )
 
 INSTALLED_APPS = DEFAULT_APPS + THIRD_PARTY_APPS + LOCAL_APPS
