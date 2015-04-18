@@ -105,6 +105,7 @@ PIPELINE_JS = {
     'site': {
         'source_filenames': (
             'maloof_lab_site/js/carousel.js',
+            'maloof_lab_site/js/nav.js',
         ),
         'output_filename': 'js/site.js',
     },

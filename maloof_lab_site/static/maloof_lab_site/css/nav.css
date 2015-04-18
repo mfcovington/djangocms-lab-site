@@ -17,6 +17,12 @@ body {
   background-color: #222;
 }
 
+/* Highlight navbar-brand when at root */
+.navbar-brand.active {
+  background-color: #080808;
+  color: white;
+}
+
 
 /***************************/
 /* Split dropdowns in menu */
