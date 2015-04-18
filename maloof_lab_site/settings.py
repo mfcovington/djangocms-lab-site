@@ -231,7 +231,6 @@ CMS_TEMPLATES = (
     ('sidebar_right.html', 'Sidebar Right'),
     ('carousel.html', 'Carousel'),
     ('genome-browser.html', 'Genome Browser'),
-    ('shiny-app.html', 'Shiny App'),
 )
 
 CMS_PERMISSION = True
