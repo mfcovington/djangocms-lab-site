@@ -88,7 +88,6 @@ PIPELINE_CSS = {
         'source_filenames': (
             'cms_lab_site/css/main.css',
             'cms_lab_site/css/nav.css',
-            'cms_lab_site/css/carousel.css',
             'cms_lab_site/css/lab-members.css',
             'cms_lab_site/css/shiny-app.css',
         ),
@@ -104,7 +103,6 @@ PIPELINE_CSS = {
 PIPELINE_JS = {
     'site': {
         'source_filenames': (
-            'cms_lab_site/js/carousel.js',
             'cms_lab_site/js/nav.js',
         ),
         'output_filename': 'js/site.js',
