@@ -7,7 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{% block title %}This is my new project home page{% endblock title %}</title>
+    <title>
+      {% block title %}
+        {% page_attribute 'title' %}{% if LAB_NAME %} | {{ LAB_NAME }}{% endif %}
+      {% endblock title %}
+    </title>
+
     {% stylesheet 'vendor' %}
     {% render_block "css" %}
     {% stylesheet 'site' %}
