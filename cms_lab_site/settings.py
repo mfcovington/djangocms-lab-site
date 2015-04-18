@@ -2,7 +2,7 @@ import os
 gettext = lambda s: s
 DATA_DIR = os.path.dirname(os.path.dirname(__file__))
 """
-Django settings for maloof_lab_site project.
+Django settings for cms_lab_site project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.7/topics/settings/
@@ -36,9 +36,9 @@ ALLOWED_HOSTS = []
 
 
 
-ROOT_URLCONF = 'maloof_lab_site.urls'
+ROOT_URLCONF = 'cms_lab_site.urls'
 
-WSGI_APPLICATION = 'maloof_lab_site.wsgi.application'
+WSGI_APPLICATION = 'cms_lab_site.wsgi.application'
 
 
 # Database
@@ -69,7 +69,7 @@ MEDIA_ROOT = os.path.join(DATA_DIR, 'media')
 STATIC_ROOT = os.path.join(DATA_DIR, 'static')
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'maloof_lab_site', 'static'),
+    os.path.join(BASE_DIR, 'cms_lab_site', 'static'),
 )
 SITE_ID = 1
 
@@ -86,11 +86,11 @@ PIPELINE_JS_COMPRESSOR = 'pipeline.compressors.uglifyjs.UglifyJSCompressor'
 PIPELINE_CSS = {
     'site': {
         'source_filenames': (
-            'maloof_lab_site/css/main.css',
-            'maloof_lab_site/css/nav.css',
-            'maloof_lab_site/css/carousel.css',
-            'maloof_lab_site/css/lab-members.css',
-            'maloof_lab_site/css/shiny-app.css',
+            'cms_lab_site/css/main.css',
+            'cms_lab_site/css/nav.css',
+            'cms_lab_site/css/carousel.css',
+            'cms_lab_site/css/lab-members.css',
+            'cms_lab_site/css/shiny-app.css',
         ),
         'output_filename': 'css/site.css',
     },
@@ -104,8 +104,8 @@ PIPELINE_CSS = {
 PIPELINE_JS = {
     'site': {
         'source_filenames': (
-            'maloof_lab_site/js/carousel.js',
-            'maloof_lab_site/js/nav.js',
+            'cms_lab_site/js/carousel.js',
+            'cms_lab_site/js/nav.js',
         ),
         'output_filename': 'js/site.js',
     },
@@ -151,11 +151,11 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'sekizai.context_processors.sekizai',
     'django.core.context_processors.static',
     'cms.context_processors.cms_settings',
-    'maloof_lab_site.context_processors.lab_settings',
+    'cms_lab_site.context_processors.lab_settings',
 )
 
 TEMPLATE_DIRS = (
-    os.path.join(BASE_DIR, 'maloof_lab_site', 'templates'),
+    os.path.join(BASE_DIR, 'cms_lab_site', 'templates'),
 )
 
 DEFAULT_APPS = (
@@ -194,7 +194,7 @@ THIRD_PARTY_APPS = (
 )
 
 LOCAL_APPS = (
-    'maloof_lab_site',
+    'cms_lab_site',
     'lab_members',
     'cms_lab_members',
     'cms_shiny',

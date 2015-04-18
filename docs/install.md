@@ -13,7 +13,7 @@
 ### Start django CMS Project
 
 ```sh
-PROJECT_NAME=maloof_lab_site
+PROJECT_NAME=cms_lab_site
 PROJECT_DIR=$HOME/git.repos/$PROJECT_NAME
 
 mkdir -p $PROJECT_DIR
