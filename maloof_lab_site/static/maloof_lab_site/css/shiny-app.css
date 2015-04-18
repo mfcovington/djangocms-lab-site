@@ -1,7 +1,21 @@
-.shiny-app {
-  border: none;
-  margin: -17px 0 0;
-  position: absolute;
-  height: 100%;
-  width: 100%;
+body {
+  background-color: white;
 }
+.shiny-app {
+  margin: -17px 0 0;
+}
+iframe + .shiny-app-info {
+  margin-top: 50px;
+}
+/* CMS Toolbar displaces Shiny App Info */
+.cms-toolbar-expanded iframe + .shiny-app-info {
+  margin-top: 80px;
+}
+
+a.thumbnail {
+  border-color: #87CEEB;
+}
+a.thumbnail:hover {
+  border-color: #FFC98D;
+}
+
