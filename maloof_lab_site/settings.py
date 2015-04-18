@@ -150,7 +150,8 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.tz',
     'sekizai.context_processors.sekizai',
     'django.core.context_processors.static',
-    'cms.context_processors.cms_settings'
+    'cms.context_processors.cms_settings',
+    'maloof_lab_site.context_processors.lab_settings',
 )
 
 TEMPLATE_DIRS = (
@@ -268,3 +269,6 @@ THUMBNAIL_PROCESSORS = (
 )
 THUMBNAIL_PRESERVE_EXTENSIONS = ('png', 'gif')
 THUMBNAIL_SUBDIR = 'versions'
+
+# Custom lab settings
+LAB_NAME = 'Maloof Lab'
