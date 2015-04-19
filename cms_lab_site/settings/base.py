@@ -1,6 +1,6 @@
 import os
 gettext = lambda s: s
-DATA_DIR = os.path.dirname(os.path.dirname(__file__))
+DATA_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 """
 Django settings for cms_lab_site project.
 
@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 
 
 # Application definition
