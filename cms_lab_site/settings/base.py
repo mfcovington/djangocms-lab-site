@@ -16,34 +16,8 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '(3i0+39s*@2=p3tjdopjb=v45ay3_dm0ej47(d_9)o82-7@5zm'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-TEMPLATE_DEBUG = True
-
-ALLOWED_HOSTS = []
-
-
 # Application definition
-
-
-
-
-
 ROOT_URLCONF = 'cms_lab_site.urls'
-
-WSGI_APPLICATION = 'cms_lab_site.wsgi.application'
-
-
-# Database
-# https://docs.djangoproject.com/en/1.7/ref/settings/#databases
-
 
 
 # Internationalization
@@ -235,11 +209,6 @@ CMS_TEMPLATES = (
 CMS_PERMISSION = True
 
 CMS_PLACEHOLDER_CONF = {}
-
-DATABASES = {
-    'default':
-        {'PORT': '', 'ENGINE': 'django.db.backends.sqlite3', 'NAME': 'project.db', 'USER': '', 'PASSWORD': '', 'HOST': 'localhost'}
-}
 
 MIGRATION_MODULES = {
     'djangocms_text_ckeditor': 'djangocms_text_ckeditor.migrations_django',
