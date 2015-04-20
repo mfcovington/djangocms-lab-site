@@ -1,4 +1,5 @@
 from .base import *
+from django.template.defaultfilters import slugify
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
@@ -33,3 +34,8 @@ ALLOWED_HOSTS = ['symposium.plb.ucdavis.edu']
 
 # Application definition
 WSGI_APPLICATION = 'cms_lab_site.wsgi.application'
+
+
+# Appending LAB_NAME allows static/media for multiple projects on single server
+STATIC_URL = '/static/%s/' % slugify(LAB_NAME)
+MEDIA_URL = '/media/%s/' % slugify(LAB_NAME)
