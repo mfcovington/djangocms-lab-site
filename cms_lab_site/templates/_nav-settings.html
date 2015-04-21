@@ -3,6 +3,17 @@
     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
     <ul class="dropdown-menu" role="menu">
       {% if user.is_authenticated %}
+
+        <li role="presentation" class="dropdown-header">
+          <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+          {% if user.first_name %}
+            {{ user.first_name }} {{ user.last_name }}
+          {% else %}
+            {% firstof user.email user.username "xxx" %}
+          {% endif %}
+        </li>
+        <li class="divider"></li>
+
         {% if user.is_staff %}
           {% if request.toolbar.show_toolbar %}
 
