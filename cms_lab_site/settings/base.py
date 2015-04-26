@@ -62,6 +62,7 @@ PIPELINE_CSS = {
         'source_filenames': (
             'cms_lab_site/css/main.css',
             'cms_lab_site/css/nav.css',
+            'cms_lab_site/css/genome-browser.css',
             'cms_lab_site/css/lab-members.css',
             'cms_lab_site/css/shiny-app.css',
         ),

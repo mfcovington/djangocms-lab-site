@@ -1,0 +1,11 @@
+.genome-browser .genome-browser-info {
+  /*margin-top: 100px;*/
+  margin-top: 70px;
+}
+
+a.thumbnail {
+  border-color: #87CEEB;
+}
+a.thumbnail:hover {
+  border-color: #FFC98D;
+}
