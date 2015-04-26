@@ -171,6 +171,7 @@ LOCAL_APPS = (
     'cms_lab_members',
     'cms_shiny',
     'cms_lab_carousel',
+    'cms_genome_browser',
 )
 
 INSTALLED_APPS = DEFAULT_APPS + THIRD_PARTY_APPS + LOCAL_APPS
