@@ -164,6 +164,7 @@ THIRD_PARTY_APPS = (
     'easy_thumbnails',
     'filer',
     'mptt',
+    'friendlytagloader',
 )
 
 LOCAL_APPS = (
