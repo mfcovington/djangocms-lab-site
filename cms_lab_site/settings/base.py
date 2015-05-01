@@ -78,6 +78,7 @@ PIPELINE_CSS = {
 PIPELINE_JS = {
     'site': {
         'source_filenames': (
+            # 'cms_lab_site/js/main.js',
             'cms_lab_site/js/nav.js',
         ),
         'output_filename': 'js/site.js',
@@ -146,6 +147,8 @@ DEFAULT_APPS = (
 
 THIRD_PARTY_APPS = (
     'cms',
+    # 'cmsplugin_simple_markdown',
+    # 'django_markwhat',
     'djangocms_column',
     'djangocms_file',
     'djangocms_flash',
@@ -242,3 +245,38 @@ THUMBNAIL_SUBDIR = 'versions'
 
 # Custom lab settings
 LAB_NAME = 'Maloof Lab'
+
+
+# Pre-populate placeholder content
+CMS_PLACEHOLDER_CONF = {
+    'research interests': {
+        'default_plugins': [
+            {
+                'plugin_type': 'TextPlugin',
+                'values': {
+                    'body':"<p><em>[Enter 'Edit Mode' and add your research interests here...]</em></p>",
+                },
+            },
+        ],
+    },
+    'personal interests': {
+        'default_plugins': [
+            {
+                'plugin_type': 'TextPlugin',
+                'values': {
+                    'body':"<p><em>[Enter 'Edit Mode' and add your personal interests here...]</em></p>",
+                },
+            },
+        ],
+    },
+    'scientist sidebar': {
+        'default_plugins': [
+            {
+                'plugin_type': 'TextPlugin',
+                'values': {
+                    'body':"<p><em>[Enter 'Edit Mode' and add sidebar content here...]</em></p>",
+                },
+            },
+        ],
+    },
+}
