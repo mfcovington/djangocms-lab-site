@@ -78,7 +78,6 @@ PIPELINE_CSS = {
 PIPELINE_JS = {
     'site': {
         'source_filenames': (
-            # 'cms_lab_site/js/main.js',
             'cms_lab_site/js/nav.js',
         ),
         'output_filename': 'js/site.js',
@@ -147,8 +146,6 @@ DEFAULT_APPS = (
 
 THIRD_PARTY_APPS = (
     'cms',
-    # 'cmsplugin_simple_markdown',
-    # 'django_markwhat',
     'djangocms_column',
     'djangocms_file',
     'djangocms_flash',
