@@ -165,6 +165,7 @@ THIRD_PARTY_APPS = (
     'filer',
     'mptt',
     'friendlytagloader',
+    'taggit',
 )
 
 LOCAL_APPS = (
@@ -173,6 +174,7 @@ LOCAL_APPS = (
     'cms_lab_members',
     'cms_shiny',
     'cms_lab_carousel',
+    'cms_lab_publications',
     'cms_genome_browser',
 )
 
