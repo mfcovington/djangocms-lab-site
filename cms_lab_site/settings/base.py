@@ -283,4 +283,16 @@ CMS_PLACEHOLDER_CONF = {
 CKEDITOR_SETTINGS = {
     'disableNativeSpellChecker': False,
     'removePlugins': 'contextmenu,liststyle,tabletools',
+    'toolbar_CMS': [
+        ['Undo', 'Redo'],
+        ['Bold', 'Italic', 'Underline', '-', 'Subscript', 'Superscript', '-',
+            'TextColor', 'BGColor', '-', 'RemoveFormat'],
+        ['Format', 'Styles'],
+        ['Source', '-', 'ShowBlocks', '-', 'Maximize'],
+        '/',
+        ['JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
+        ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-',
+            'Table', '-', 'HorizontalRule'],
+        ['cmsplugins'],
+    ],
 }
