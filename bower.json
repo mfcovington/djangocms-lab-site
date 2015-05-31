@@ -9,6 +9,7 @@
   "homepage": "http://symposium.plb.ucdavis.edu",
   "dependencies": {
     "bootstrap": "~3.3.4",
-    "jquery": "1.11.2"
+    "jquery": "1.11.2",
+    "bootstrapck4-skin": "~1.0.0"
   }
 }

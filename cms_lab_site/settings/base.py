@@ -283,6 +283,7 @@ CMS_PLACEHOLDER_CONF = {
 CKEDITOR_SETTINGS = {
     'disableNativeSpellChecker': False,
     'removePlugins': 'contextmenu,liststyle,tabletools',
+    'skin': 'bootstrapck',
     'toolbar_CMS': [
         ['Undo', 'Redo'],
         ['Find', 'Replace', '-', 'Scayt'],
