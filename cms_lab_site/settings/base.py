@@ -279,3 +279,8 @@ CMS_PLACEHOLDER_CONF = {
         ],
     },
 }
+
+CKEDITOR_SETTINGS = {
+    'disableNativeSpellChecker': False,
+    'removePlugins': 'contextmenu,liststyle,tabletools',
+}
