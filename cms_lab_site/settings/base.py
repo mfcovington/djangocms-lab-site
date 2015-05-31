@@ -285,6 +285,7 @@ CKEDITOR_SETTINGS = {
     'removePlugins': 'contextmenu,liststyle,tabletools',
     'toolbar_CMS': [
         ['Undo', 'Redo'],
+        ['Find', 'Replace'],
         ['Bold', 'Italic', 'Underline', '-', 'Subscript', 'Superscript', '-',
             'TextColor', 'BGColor', '-', 'RemoveFormat'],
         ['Format', 'Styles'],
