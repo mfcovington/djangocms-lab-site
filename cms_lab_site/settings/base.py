@@ -293,7 +293,7 @@ CKEDITOR_SETTINGS = {
         '/',
         ['JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
         ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-',
-            'Table', '-', 'HorizontalRule'],
+            'Blockquote', '-', 'Table', '-', 'HorizontalRule'],
         ['cmsplugins'],
     ],
 }
