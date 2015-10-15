@@ -29,7 +29,10 @@ DATABASES = {
 
 
 # CHANGE DEPENDING ON HOST
-ALLOWED_HOSTS = ['symposium.plb.ucdavis.edu']
+ALLOWED_HOSTS = [
+    'phytonetworks.org',
+    'symposium.plb.ucdavis.edu',
+]
 
 
 # Application definition
