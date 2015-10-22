@@ -254,7 +254,7 @@ CMS_PLACEHOLDER_CONF = {
             {
                 'plugin_type': 'TextPlugin',
                 'values': {
-                    'body':"<p><em>[Enter 'Edit Mode' and add your research interests here...]</em></p>",
+                    'body':"<p><em>[Enter 'Edit Mode' and double-click here to add your research interests.]</em></p>",
                 },
             },
         ],
@@ -264,7 +264,7 @@ CMS_PLACEHOLDER_CONF = {
             {
                 'plugin_type': 'TextPlugin',
                 'values': {
-                    'body':"<p><em>[Enter 'Edit Mode' and add your personal interests here...]</em></p>",
+                    'body':"<p><em>[Enter 'Edit Mode' and double-click here to add your personal interests.]</em></p>",
                 },
             },
         ],
@@ -274,7 +274,7 @@ CMS_PLACEHOLDER_CONF = {
             {
                 'plugin_type': 'TextPlugin',
                 'values': {
-                    'body':"<p><em>[Enter 'Edit Mode' and add sidebar content here...]</em></p>",
+                    'body':"<p><em>[Enter 'Edit Mode' and double-click here to add sidebar content.]</em></p>",
                 },
             },
         ],
