@@ -31,6 +31,7 @@ DATABASES = {
 # CHANGE DEPENDING ON HOST
 ALLOWED_HOSTS = [
     'phytonetworks.org',
+    'phytonetworks.ucdavis.edu',
     'symposium.plb.ucdavis.edu',
 ]
 
