@@ -41,6 +41,14 @@
 
         {% endif %}
 
+        {% if user.sysadmin %}
+          <li>
+            <a href="{% url 'system_maintenance:system_maintenance_home_view' %}">
+              System Maintenance
+            </a>
+          </li>
+        {% endif %}
+
         {% if user.has_usable_password %}
           <li>
             <a href="{% url 'admin:password_change' %}?next={{ request.path }}">
