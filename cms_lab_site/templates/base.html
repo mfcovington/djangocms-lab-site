@@ -14,7 +14,9 @@
     </title>
 
     {% stylesheet 'vendor' %}
-      {% render_block "css" %}
+    {% render_block "css" %}
+    {% block stylesheets %}
+    {% endblock stylesheets %}
     {% stylesheet 'site' %}
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,5 +36,7 @@
     {% javascript 'vendor' %}
     {% javascript 'site' %}
     {% render_block "js" %}
+    {% block javascript %}
+    {% endblock javascript %}
   </body>
 </html>

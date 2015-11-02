@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load sekizai_tags staticfiles %}
+
+{% block title %}System Maintenance{% endblock %}</title>
+
+{% block stylesheets %}
+  {% addtoblock "css" strip %}
+    <link rel="stylesheet" type="text/css" href="{% static 'system_maintenance/css/app.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'system_maintenance/css/syntax-highlighting.css' %}">
+  {% endaddtoblock %}
+{% endblock stylesheets %}
+
+{% block content %}
+{% endblock content %}
+
+{% block javascript %}
+  {% addtoblock "js" strip %}
+    <script src="{% static 'system_maintenance/js/app.js' %}"></script>
+  {% endaddtoblock %}
+{% endblock javascript %}
