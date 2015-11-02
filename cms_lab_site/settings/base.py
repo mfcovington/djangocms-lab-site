@@ -138,6 +138,7 @@ DEFAULT_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.admin',
+    'django.contrib.humanize',
     'django.contrib.sites',
     'django.contrib.sitemaps',
     'django.contrib.staticfiles',
@@ -177,6 +178,7 @@ LOCAL_APPS = (
     'cms_lab_data',
     'cms_lab_publications',
     'cms_genome_browser',
+    'system_maintenance',
 )
 
 INSTALLED_APPS = DEFAULT_APPS + THIRD_PARTY_APPS + LOCAL_APPS
