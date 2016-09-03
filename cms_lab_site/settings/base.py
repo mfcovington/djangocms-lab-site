@@ -167,6 +167,7 @@ THIRD_PARTY_APPS = (
     'mptt',
     'friendlytagloader',
     'taggit',
+    'colorfield',
 )
 
 LOCAL_APPS = (
