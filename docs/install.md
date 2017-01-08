@@ -21,6 +21,8 @@ cd $PROJECT_DIR
 mkvirtualenv -p `which python3` $PROJECT_NAME
 setvirtualenvproject
 
+pip install --upgrade pip
+
 pip install djangocms-installer
 djangocms -p . $PROJECT_NAME
 # Database configuration (in URL format) [default sqlite://localhost/project.db]: 
